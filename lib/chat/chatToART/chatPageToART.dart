@@ -54,20 +54,6 @@ class _chatpageToART extends State<chatpageToART> {
           builder: (context, snapshot) {
             Map<String, dynamic> data =
                 snapshot.data!.data() as Map<String, dynamic>;
-            // CollectionReference dataART =
-            //     FirebaseFirestore.instance.collection('ART');
-            // String uidART = '';
-            // @override
-            // void initState() {
-            //   dataART.doc(data['uidART']).get().then((value) {
-            //     var fields = value.data() as Map<String, dynamic>;
-            //     setState(() {
-            //       uidART = fields['uidART'];
-            //     });
-            //   });
-            //   super.initState();
-            // }
-            // String uidART = data['uidART'];
 
             return SingleChildScrollView(
               child: Column(
@@ -123,7 +109,6 @@ class _chatpageToART extends State<chatpageToART> {
                                                 'MessagesAntarCustomersART')
                                             .doc()
                                             .set({
-                                          //ditambah doc(uid) agar bisa ke privat chat
                                           'messageCustomers':
                                               message.text.trim(),
                                           'time': DateTime.now(),

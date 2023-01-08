@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
 class Mainpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => const Scaffold(
-        body: login(),
+        body: SplashScreen(),
         // StreamBuilder<User?>(
         //   stream: FirebaseAuth.instance.authStateChanges(),
         //   builder: (context, snapshot) {

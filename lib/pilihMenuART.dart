@@ -52,14 +52,14 @@ class _pilihMenuART extends State<pilihMenuART> {
                               fontSize: 20, fontWeight: FontWeight.bold),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.all(10),
-                        child: Text(
-                          user.uid,
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
-                        ),
-                      ),
+                      // Padding(
+                      //   padding: EdgeInsets.all(10),
+                      //   child: Text(
+                      //     user.uid,
+                      //     style: TextStyle(
+                      //         fontSize: 20, fontWeight: FontWeight.bold),
+                      //   ),
+                      // ),
                       Padding(
                         padding: EdgeInsets.only(top: 10, bottom: 10),
                         child: ElevatedButton(
